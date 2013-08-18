@@ -1,6 +1,6 @@
 ##Introduction
 
-I'm trying to get a better understanding of EmberJS by creating a project using Google Maps.  I've published a sample on https://github.com/ddewaele/my-emberjs-starter-kit/tree/master/google-maps and I would love to get some feedback on the implementation.
+I'm trying to get a better understanding of EmberJS by creating a project using Google Maps.  I've published a sample on https://github.com/ddewaele/my-emberjs-starter-kit/tree/master/google-maps and I would love to get some feedback on the implementation. Also posted this on the [EmberJS Forum](http://discuss.emberjs.com/t/emberjs-with-google-maps-feedback-requested/2212).
 
 - [Google Maps Demo](https://github.com/ddewaele/my-emberjs-starter-kit/tree/master/google-maps)
 
