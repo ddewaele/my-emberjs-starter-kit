@@ -7,8 +7,17 @@ Me learning EmberJS through various samples
 Currently contains
 
 - The EmberJS starterkit
+
+![starter kit](https://dl.dropboxusercontent.com/u/13246619/Blog%20Articles/EmberJS/demo_starterkit.png)
+
 - Overview screen using the FixtureAdapter
+
+![starter kit](https://dl.dropboxusercontent.com/u/13246619/Blog%20Articles/EmberJS/demo_overview_fixture.png)
+
 - Overview screen using the LSAdapter
+
+![starter kit](https://dl.dropboxusercontent.com/u/13246619/Blog%20Articles/EmberJS/demo_overview_localstorage.png)
+
 - Table multi-select delete
 
 ![mutli-select](https://dl.dropboxusercontent.com/u/13246619/Blog%20Articles/EmberJS/demo_multi_select.png)
