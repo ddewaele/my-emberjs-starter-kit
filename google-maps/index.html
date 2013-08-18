@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <script type="text/x-handlebars">
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+    {{#view App.MapView}}{{/view}}
+    <hr/>
+
+    <p>Nr of records selected = {{selectedMarkerCounter}}
+    <button {{action 'removeSelectedMarkers'}}>Remove selected markers</button>
+    </p>
+
+    <table class="table striped">
+      <tr>
+        <th>Selected</td>
+        <th>Latitude</td>
+        <th>Longitude</td>
+      </tr>
+
+    {{#each controller itemController="marker"}}
+        <tr {{bindAttr class="selected:warning"}}>
+          <td>{{view Ember.Checkbox checkedBinding="selected"}}</td>
+          <td>{{lat}}</td>
+          <td>{{lng}}</td>
+        </tr>
+    {{/each}}
+
+    </table>
+
+  </script>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="../js/libs/jquery-1.9.1.js"></script>
+  <script src="../js/libs/bootstrap.min.js"></script>
+  <script src="../js/libs/handlebars-1.0.0.js"></script>
+  <script src="../js/libs/ember-1.0.0-rc.7.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+
+
+</html>

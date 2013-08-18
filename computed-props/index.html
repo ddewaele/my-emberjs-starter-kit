@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <script type="text/x-handlebars">
+    <h2>Welcome to Ember.js</h2>
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+
+
+    <p>
+    {{summaryText}}   
+    </p>
+
+
+    <form role="form">
+      <div class="form-group">
+        <label for="firstName">Firstname</label>
+            {{view Ember.TextField id="firstName" class="form-control" placeholder="What is your first name ?"
+           valueBinding="firstName" }}
+      </div>
+      <div class="form-group">
+        <label for="lastName">Lastname</label>
+        {{view Ember.TextField id="lastName" class="form-control" placeholder="What is your last name ?"
+           valueBinding="lastName" }}
+      </div>
+      <button class="btn btn-default" {{action 'login'}}>Login</button>
+      
+    </form>
+
+    <p>
+      
+    </p>
+
+  </script>
+
+  <script src="../js/libs/jquery-1.9.1.js"></script>
+  <script src="../js/libs/bootstrap.min.js"></script>
+  <script src="../js/libs/handlebars-1.0.0.js"></script>
+  <script src="../js/libs/ember-1.0.0-rc.7.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+
+
+</html>
