@@ -33,7 +33,7 @@
         {{view Ember.TextField id="lastName" class="form-control" placeholder="What is your last name ?"
            valueBinding="lastName" }}
       </div>
-      <button class="btn btn-default" {{action 'login'}}>Login</button>
+      <button class="btn btn-default" {{bindAttr disabled="disableLogin"}} {{action 'login'}}>Login</button>
       
     </form>
 

@@ -20,6 +20,10 @@ App.IndexController = Ember.ObjectController.extend({
   	}
   }.property("firstName","lastName"),
 
+  disableLogin: function() {
+  	return !(this.get("firstName") && this.get("lastName"));
+  }.property("firstName","lastName"),
+
   login: function() {
   	console.log("logging in the user.");
   }
