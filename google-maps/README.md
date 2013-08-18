@@ -78,4 +78,4 @@ In order to do that, the View also needs to have a list of App.Marker objects.
 
 ## Conclusion
 
-If you made it this far thanks a lot ! Feel free to provide feedback here or on the  Github project.
+If you made it this far thanks a lot ! Feel free to provide feedback here or on the [EmberJS Forum](http://discuss.emberjs.com/t/emberjs-with-google-maps-feedback-requested/2212).
