@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <script type="text/x-handlebars">
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+
+    <p>Type in your origin and destination to get directions. Values are submitted on <b>focusOut</b></p>
+
+    <form role="form">
+      <div class="form-group">
+        <label for="from">From (ex: New York)</label>
+            {{#view App.InlineTextField id="from" class="form-control" placeholder="What is your origin ?"
+           blurredValueBinding="from"}}
+            {{/view}}
+      </div>
+      <div class="form-group">
+        <label for="to">To (ex: San Francisco)</label>
+                {{#view App.InlineTextField id="to" class="form-control" placeholder="What is your destination ?"
+           blurredValueBinding="to"}}
+            {{/view}}
+      </div>
+
+      <!--
+      <button id="showDirections" class="btn btn-default">Show Directions</button>
+      -->
+      
+    </form>
+
+    <p>
+    {{#view App.MapView fromBinding="from" toBinding="to" triggerButton="showDirections"}}{{/view}}
+    </p>
+
+  </script>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="../js/libs/jquery-1.9.1.js"></script>
+  <script src="../js/libs/bootstrap.min.js"></script>
+  <script src="../js/libs/handlebars-1.0.0.js"></script>
+  <script src="../js/libs/ember-1.0.0-rc.7.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+
+
+</html>

@@ -31,6 +31,10 @@ Currently contains
 
 ![mutli-select](https://dl.dropboxusercontent.com/u/13246619/Blog%20Articles/EmberJS/demo_google_maps.png)
 
+- [Google Maps Directions Demo](https://github.com/ddewaele/my-emberjs-starter-kit/tree/master/google-maps-directions)
+
+![mutli-select](https://dl.dropboxusercontent.com/u/13246619/Blog%20Articles/EmberJS/demo_google_directions.png)
+
 - EmberJS CRUD REST Demo 
 
 ![mutli-select](https://dl.dropboxusercontent.com/u/13246619/Blog%20Articles/EmberJS/demo_crud_rest.png)
